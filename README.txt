@@ -1,6 +1,18 @@
+BUILD
+
+runs in container (requires docker-ce)
+
+requires source (from baxter SDK) for 
+baxter_common
+baxter_examples
+baxter_interface
+baxter_tools
+
 ssh mb@mb
 rosrun baxter_tools tuck_arms.py -u
 roslaunch vxlab.launch
+
+RUN
 
 [NGV box]
 log in as "demo"
