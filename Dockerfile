@@ -82,6 +82,8 @@ RUN catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYP
     # changed --jobs flag to 4 to speed up the build process
     catkin build --jobs 4 --limit-status-rate 0.001 --no-notify
 
+RUN apt update && apt install -y iputils-ping
+
 COPY rosenv-baxter-master.bash rosenv-baxter-master.bash
 RUN chmod +x rosenv-baxter-master.bash
 COPY launch.bash launch.bash
