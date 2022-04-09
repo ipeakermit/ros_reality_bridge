@@ -1,0 +1,3 @@
+./docker-build && \
+docker rm -f rr && \
+docker run --name=rr --net=host -it rosie-reality2 bash
