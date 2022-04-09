@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker cp rr:/root/ws_baxter/src/ros_reality_bridge/src/unityNode.py src/ros_reality_bridge/src/unityNode.py
+#docker cp rr:/root/ws_baxter/src/ros_reality_bridge/src/unityNode.py unityNode.py
